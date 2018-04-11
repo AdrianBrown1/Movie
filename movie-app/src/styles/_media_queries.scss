@@ -1,0 +1,27 @@
+$base-font-size: 16;
+$base-padding: 2rem;
+$max-width-container: 90rem;
+$timing: 0.25s;
+$modal-content-max-width: 45em;
+
+$mqs: (
+  small-mobile: 460 / 16,
+  almost-mobile: 570 / 16,
+  mobile: 767 / 16,
+  tablet: 1024 / 16,
+  small-desktop: 1280 / 16,
+  medium-desktop: 1440 / 16,
+  desktop: 1500 / 16,
+);
+
+@mixin smaller-than($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+  
+@mixin larger-than($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
