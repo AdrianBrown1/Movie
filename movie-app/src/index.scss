@@ -1,5 +1,15 @@
+// CORE INCLUDES
+@import './styles/_base';
+@import './styles/_media_queries';
+// COMPONENTS
+@import './styles/_landing-page';
+@import './styles/_error';
+@import './styles/_header';
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  font-family: $base-font;
+  font-size: $base-font-size;
 }
