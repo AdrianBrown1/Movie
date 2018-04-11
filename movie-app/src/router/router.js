@@ -4,15 +4,15 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import { home } from '../constants/routes';
-// import Dashboard from '../containers/dash-board-container/dash-board-container';
-// import Error from '../components/error/error';
+import LandingPage from '../containers/landing-page-container/landing-page-container';
+import Error from '../screens/error-page/error-page';
+
 export default () => (
   <Router>
     <Fragment>
       <Switch>
-        {/* <Route exact path={home} component={Dashboard}/> */}
-        {/* <Route component={Error}/> */}
+        <Route exact path={'/'} component={LandingPage}/>
+        <Route component={Error}/>
       </Switch>
     </Fragment>
   </Router>
