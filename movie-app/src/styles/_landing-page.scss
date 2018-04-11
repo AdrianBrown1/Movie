@@ -1,0 +1,43 @@
+.landing-page__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.landing-page__title {
+  margin: 10rem 2rem 0 2rem;
+  font-size: 2.5rem;
+  color: #3498db;
+  font-family: $base-font;
+}
+
+.landing-page__button{
+  background-color: #4CAF50;
+  width: 10rem; 
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  outline:0;
+
+  @include larger-than(47.5rem) {
+    transition: all .2s ease-in-out;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
