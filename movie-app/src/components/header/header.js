@@ -2,11 +2,9 @@ import React from 'react';
 import logo from '../../video-camera.svg';
  
 const Header = (props) => {
-
-   function refreshHome() {
-    // grab history from props & push home. 
+  
+  const refreshHome = () => {
     const { history } = props;
-    console.log(history);
     history.push('/');
   }
 
