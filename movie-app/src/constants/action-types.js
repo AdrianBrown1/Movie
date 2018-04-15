@@ -1,4 +1,3 @@
-// export const API_KEY = '&appid=902d167e0e5ec3836be796545b68317e';
-// export const FETCH_WEATHER_REQUESTS = 'FETCH_WEATHER_REQUESTS';
-// export const FETCH_WEATHER_ERR = 'FETCH_WEATHER_ERR';
-// export const FETCH_WEATHER_SUCCESS = 'FETCH_WEATHER_SUCCESS';
+export const API_KEY = '&apikey=cae1347a';
+export const FETCH_MOVIES_SUCCESS = 'FETCH_MOVIES_SUCCESS';
+export const FETCH_MOVIES_ERROR = 'FETCH_MOVIES_ERROR';
