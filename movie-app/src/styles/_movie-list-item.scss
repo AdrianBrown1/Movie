@@ -1,0 +1,27 @@
+.list-item {
+  display: flex;
+  justify-content: center;
+}
+
+.list-item__button {
+  display: flex;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  display: inline-block;
+  outline:0;
+  height: 100%;
+  max-width: 20.625rem;
+  max-height: 27.8125rem;
+}
+
+.list-item__image {
+  width: 100%;
+  height: auto;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}
