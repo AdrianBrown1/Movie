@@ -1,18 +1,18 @@
   import React from 'react';
-  import logo from '../../video-camera.svg';
 
 const MovieListItem = (props) => {
-  // console.log('YO YO YO', props);
+
   const { movie } = props;
   if(!movie) return null;
   const movieImage = movie.Poster;
 
   const showMovieInfo  = () => {
-    console.log('POOP');
-    // const { history } = props;
-    // history.push('/');
+    const { movie, searchMovieID, history } = props;
+    const movieID = movie.imdbID;
+    searchMovieID(movieID);
+    history.push('/movie-info');
   }
-  // console.log('Props', props);
+ 
   return (
     <div className='list-item'>
       <button className='list-item__button' onClick={showMovieInfo}>

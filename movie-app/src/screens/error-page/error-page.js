@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import Header from '../../components/header/header'
 
 export default class ErrorPage extends Component {
   
-  static propTypes = {
-    // fetchWeather: PropTypes.func,
-    // resetWeatherState: PropTypes.func,
-    // weather: PropTypes.object,
-  }
-
-
   render() {
     const { history } = this.props;
     return (

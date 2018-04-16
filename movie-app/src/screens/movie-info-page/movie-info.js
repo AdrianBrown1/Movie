@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../../components/header/header'
 import MovieList from '../../components/movie-list/movie-list';
 
-export default class MovieListPage extends Component {
+export default class MovieInfoPage extends Component {
 
   static propTypes = {
     fetchMovies: PropTypes.func,

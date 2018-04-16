@@ -4,7 +4,7 @@ import MovieListItem from '../movie-list-item/movie-list-item';
 
 const MovieList = (props) => {
   
-  const { movies, history } = props;
+  const { movies, history, searchMovieID } = props;
   if(!movies) return null;
   const moviesArr = movies.movies;
   let halfWayThough = Math.floor(moviesArr.length / 2)
@@ -28,6 +28,7 @@ const MovieList = (props) => {
           <MovieListItem 
             movie={movie} 
             history={history} 
+            searchMovieID={searchMovieID}
             key={Math.random()}
           />
         )}

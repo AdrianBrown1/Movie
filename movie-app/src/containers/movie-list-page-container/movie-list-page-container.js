@@ -1,6 +1,6 @@
 import MovieListPage from '../../screens/movie-list-page/movie-list-page';
 import { connect } from 'react-redux';
-import { fetchMovies, searchMovies } from '../../actions/actions';
+import { fetchMovies, searchMovies, searchMovieID } from '../../actions/actions';
 // import { fetchWeather, resetWeatherState } from '../../actions/actions';
 // import movies from '../../reducers/movies';
 
@@ -16,6 +16,9 @@ const mapDispatchToProps = (dispatch) => ({
   },
   searchMovies: (params) => {
     dispatch(searchMovies(params));
+  },
+  searchMovieID: (params) => {
+    dispatch(searchMovieID(params));
   },
 });
 

@@ -5,7 +5,9 @@ import { fetchMovies, searchMovies } from '../../actions/actions';
 // import movies from '../../reducers/movies';
 
 const mapStateToProps = (state) => {
-  return state.movies;
+  return {
+    movies: state.movies,
+  }
 };
 
 const mapDispatchToProps = (dispatch) => ({

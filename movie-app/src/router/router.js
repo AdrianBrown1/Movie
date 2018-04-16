@@ -13,9 +13,9 @@ export default () => (
   <Router>
     <Fragment>
       <Switch>
-        <Route exact path={'/'} component={LandingPage}/>
-        <Route exact path={'/movie-list'} component={MovieListPage}/>
-        <Route exact path={'/movie-info'} component={MovieInfoPage}/>
+        <Route  path='/' exact component={LandingPage}/>
+        <Route  path='/movie-list'  component={MovieListPage}/>
+        <Route  path='/movie-info'  component={MovieInfoPage}/>
         <Route component={Error}/>
       </Switch>
     </Fragment>

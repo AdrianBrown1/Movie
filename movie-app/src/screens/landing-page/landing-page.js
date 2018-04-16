@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Header from '../../components/header/header'
 
 export default class Landingpage extends Component {
 
   static propTypes = {
-    // fetchWeather: PropTypes.func,
-    // resetWeatherState: PropTypes.func,
-    // weather: PropTypes.object,
+    fetchMovies: PropTypes.func,
+    movies: PropTypes.object,
   }
-  
+  // componentDidMount() {
+  //   const { fetchMovies } = this.props;
+  //   fetchMovies();
+  // }
+
   _transitionToNextScreen = () => {
-    console.log('POOP');
+    const { history } = this.props;
+    history.push('/movie-list');
   }
 
   render() {
     console.log(this.props);
-    const { history } = this.props;
-    console.log(history);
+    const { history, movies } = this.props;
+    if(!movies) return null;
+    // Pass movies to next screen component.
+    console.log('HELLO WORLD ****', movies.movies);
     return (
       <div className="landing-page__container">
         <Header history={history}/>

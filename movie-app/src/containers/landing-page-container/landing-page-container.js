@@ -1,22 +1,19 @@
 import LandingPage from '../../screens/landing-page/landing-page';
 import { connect } from 'react-redux';
+import { fetchMovies } from '../../actions/actions';
 // import { fetchWeather, resetWeatherState } from '../../actions/actions';
-// import weather from '../../reducers/weather';
-
+// import movies from '../../reducers/movies';
 
 const mapStateToProps = (state) => {
   return {
-   weather: state.weather,
-  };
+    movies: state.movies,
+  }
 };
 
 const mapDispatchToProps = (dispatch) => ({
-//   resetWeatherState: () => {
-//     dispatch(resetWeatherState());
-//   },
-//   fetchWeather: (params) => {
-//     dispatch(fetchWeather(params));
-//   },
+  // fetchMovies: () => {
+  //   dispatch(fetchMovies());
+  // },
 });
 
 export default connect(

@@ -9,6 +9,7 @@ export default class MovieListPage extends Component {
     fetchMovies: PropTypes.func,
     movies: PropTypes.object,
     searchMovies: PropTypes.func,
+    searchMovieID: PropTypes.func,
   }
 
   componentDidMount() {
@@ -27,7 +28,7 @@ export default class MovieListPage extends Component {
   }
 
   render() {
-    const { history, movies, searchMovies } = this.props;
+    const { history, movies, searchMovies, searchMovieID } = this.props;
     
     return (
       <div className="movie-list__container">
@@ -50,7 +51,12 @@ export default class MovieListPage extends Component {
             >Submit</button>
           </div>
          </form>
-         <MovieList movies={movies} history={history} searchMovies={searchMovies}/>
+         <MovieList 
+          movies={movies} 
+          history={history} 
+          searchMovies={searchMovies}
+          searchMovieID={searchMovieID}
+        />
       </div>
     );
   }
