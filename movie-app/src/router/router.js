@@ -5,6 +5,8 @@ import {
   Switch,
 } from 'react-router-dom';
 import LandingPage from '../containers/landing-page-container/landing-page-container';
+import MovieListPage from '../containers/movie-list-page-container/movie-list-page-container';
+import MovieInfoPage from '../containers/movie-info-container/movie-info-container';
 import Error from '../screens/error-page/error-page';
 
 export default () => (
@@ -12,6 +14,8 @@ export default () => (
     <Fragment>
       <Switch>
         <Route exact path={'/'} component={LandingPage}/>
+        <Route exact path={'/movie-list'} component={MovieListPage}/>
+        <Route exact path={'/movie-info'} component={MovieInfoPage}/>
         <Route component={Error}/>
       </Switch>
     </Fragment>
