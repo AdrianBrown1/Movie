@@ -1,0 +1,12 @@
+.movie-lists {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  // background-color: tomato;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+}
