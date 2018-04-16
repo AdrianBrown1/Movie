@@ -7,6 +7,7 @@ const Header = (props) => {
     const { history } = props;
     // Check why error page is broken.
     history.push('/');
+    console.log('HEADER', history);
   }
 
   return (
