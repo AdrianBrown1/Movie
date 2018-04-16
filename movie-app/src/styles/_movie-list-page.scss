@@ -1,0 +1,53 @@
+.movie-list__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  .movie-list__form {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+  }
+
+  .movie-list__input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 20rem;
+  }
+  
+  .movie-list__input {
+    max-width: 10rem;
+    width: 100%;
+    font-size: 0.75rem;
+    outline: inherit;
+    color: black; 
+    border: 0.03125rem solid grey;
+    border-radius: 0.25rem;
+    opacity: 0.6;
+    padding: 0.5rem;
+    background: none;
+  
+    @include larger-than(47.4rem) {
+      font-size: 1rem;
+      max-width: 20rem;
+    }
+  }
+
+  .movie-list__input-button {
+    display: none;
+
+    @include larger-than(47.5rem) {
+      display: flex;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      text-align: center;
+      padding: 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+      outline: 0;
+    }
+  }
